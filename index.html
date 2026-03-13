@@ -21,3 +21,192 @@
   h3{font-size:16px;color:var(--muted);margin:18px 0 6px}
   p{margin:10px 0}
   .note{font-size:13px;color:var(--muted)}
+  .badge{display:inline-block;background:var(--chip);color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:4px 10px;font-size:12px;margin:6px 6px 0 0}
+  .box{border:1px solid var(--line);border-radius:8px;padding:14px;margin:12px 0;background:#fff}
+  .flex{display:flex;gap:12px;flex-wrap:wrap}
+  .col{flex:1 1 280px;min-width:260px}
+  .textarea{width:100%;min-height:120px;border:1px dashed var(--line);border-radius:6px;padding:10px;font:inherit}
+  .lines{min-height:120px;background:linear-gradient(to bottom, transparent 95%, #eaeaea 95%) 0 0/100% 28px;border:1px dashed var(--line);border-radius:6px;padding:10px}
+  .checklist li{margin:8px 0}
+  ul,ol{padding-left:18px}
+  table{border-collapse:collapse;width:100%;font-size:14px;margin-top:10px}
+  th,td{border:1px solid var(--line);padding:8px;vertical-align:top}
+  th{background:#f7f9ff;color:#2b2b2b;text-align:left}
+  .grid-2{display:grid;grid-template-columns:1fr;gap:12px}
+  @media (min-width:860px){ .grid-2{grid-template-columns:1fr 1fr} }
+  .small{font-size:12px;color:var(--muted)}
+  .caption{font-size:12px;color:#444;margin-top:6px}
+  .footer{margin-top:20px;font-size:12px;color:var(--muted);text-align:center}
+  a{color:#0b57d0}
+  @media print{
+    .wrap{padding:0}
+    .badge{border-color:#888;color:#444;background:#f4f4f4}
+    a{text-decoration:none;color:#000}
+  }
+</style>
+</head>
+<body>
+<main class="wrap" role="main">
+  <header>
+    <h1>Fix It! Extended Constructed Response & Graph Revision</h1>
+    <p class="note">Purpose: Practice turning a flawed draft or visual into a clear, correct, and well‑supported response.</p>
+  </header>
+
+  <!-- ===== Teacher Insert Zone ===== -->
+  <section aria-labelledby="teacher-zone">
+    <div class="box">
+      <h2 id="teacher-zone">Teacher Paste Zone (replace this text)</h2>
+      <p class="small">
+        Paste the student’s original paragraph or describe/paste an image link to the flawed graph.  
+        Example text: “My grandmother would call me to the dining table to teach origami …”  
+        Example visual description: “Bar graph ‘School Lunch Preferences’ with axis label errors and totals mis-summed.”
+      </p>
+      <div class="textarea" aria-label="Original student work (paste here)"></div>
+    </div>
+  </section>
+
+  <!-- ===== Part A: Writing ===== -->
+  <section aria-labelledby="part-a">
+    <span class="badge" aria-label="ELA badge">ELA • Extended Constructed Response</span>
+    <h2 id="part-a">Part A — Diagnose the Writing</h2>
+
+    <div class="grid-2">
+      <div class="box" aria-labelledby="find-problems">
+        <h3 id="find-problems">1) Find the Problems</h3>
+        <ul class="checklist">
+          <li>Three grammar/spelling errors:
+            <div class="lines" aria-label="List grammar or spelling issues"></div>
+          </li>
+          <li>Two unclear or run‑on sentences:
+            <div class="lines" aria-label="List unclear sentences"></div>
+          </li>
+          <li>Evidence or citation problems (what’s missing or misused?):
+            <div class="lines" aria-label="Evidence issues"></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="box" aria-labelledby="strengthen-writing">
+        <h3 id="strengthen-writing">2) Strengthen the Writing</h3>
+        <ol>
+          <li>Write a precise claim/thesis:
+            <div class="textarea" aria-label="Claim or thesis"></div>
+          </li>
+          <li>Add/revise evidence (quote, detail, data) with proper intro:
+            <div class="textarea" aria-label="Evidence with context"></div>
+          </li>
+          <li>Explain how the evidence proves the claim (reasoning):
+            <div class="textarea" aria-label="Reasoning"></div>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="box" aria-labelledby="rewrite">
+      <h3 id="rewrite">3) Rewrite the Paragraph (Polished Draft)</h3>
+      <p class="small">Use strong transitions, precise verbs, and complete sentences. Aim for 6–8 sentences.</p>
+      <div class="textarea" style="min-height:180px" aria-label="Revised paragraph"></div>
+    </div>
+
+    <div class="box" aria-labelledby="self-check">
+      <h3 id="self-check">4) Self‑Check (Evidence Sandwich)</h3>
+      <ul class="checklist">
+        <li><label><input type="checkbox" /> Claim is clear and arguable.</label></li>
+        <li><label><input type="checkbox" /> Evidence is introduced, accurate, and relevant.</label></li>
+        <li><label><input type="checkbox" /> Reasoning explains <em>how</em> evidence supports the claim.</label></li>
+        <li><label><input type="checkbox" /> Conventions (capitalization, punctuation, spelling) are correct.</label></li>
+        <li><label><input type="checkbox" /> Sentences vary in type and length; transitions guide the reader.</label></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Part B: Graph/Visual ===== -->
+  <section aria-labelledby="part-b">
+    <span class="badge" aria-label="Data & Visuals badge">Literacy Across Content • Data & Visuals</span>
+    <h2 id="part-b">Part B — Fix the Graph / Visual</h2>
+
+    <div class="box" aria-labelledby="whats-wrong">
+      <h3 id="whats-wrong">1) What’s Wrong With This Visual?</h3>
+      <p class="small">Check all that apply and note fixes.</p>
+      <div class="grid-2">
+        <div>
+          <ul class="checklist" aria-label="Graph issues checklist">
+            <li><label><input type="checkbox" /> Title is missing or vague</label></li>
+            <li><label><input type="checkbox" /> Axes missing labels/units</label></li>
+            <li><label><input type="checkbox" /> Scale inconsistent or misleading</label></li>
+            <li><label><input type="checkbox" /> Bars/lines not comparable</label></li>
+            <li><label><input type="checkbox" /> Data totals don’t add up</label></li>
+            <li><label><input type="checkbox" /> Legend/key unclear</label></li>
+            <li><label><input type="checkbox" /> Colors/patterns confusing</label></li>
+            <li><label><input type="checkbox" /> Source/notes missing</label></li>
+          </ul>
+        </div>
+        <div>
+          <p><strong>Specific fixes you will make:</strong></p>
+          <div class="textarea" aria-label="Describe graph fixes"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box" aria-labelledby="redesign-plan">
+      <h3 id="redesign-plan">2) Redesign Plan (Sketch or Describe)</h3>
+      <p class="small">If printing, sketch your improved graph below. If digital, describe the layout clearly.</p>
+      <div class="textarea" style="min-height:160px" aria-label="Sketch or describe improved graph"></div>
+      <p class="caption">Include: accurate title, labeled axes with units, consistent scale, correct data, legend (if needed), and a brief source note.</p>
+    </div>
+
+    <div class="box" aria-labelledby="visual-caption">
+      <h3 id="visual-caption">3) Visual Caption (1–2 sentences)</h3>
+      <p class="small">Write a caption that states the main takeaway from the data.</p>
+      <div class="textarea" aria-label="Caption text"></div>
+    </div>
+  </section>
+
+  <!-- ===== Rubric ===== -->
+  <section aria-labelledby="rubric">
+    <h2 id="rubric">Quick Rubric</h2>
+    <table role="table" aria-label="Quick rubric">
+      <thead>
+        <tr>
+          <th scope="col">Criteria</th>
+          <th scope="col">Meets (2)</th>
+          <th scope="col">Approaches (1)</th>
+          <th scope="col">Needs Work (0)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Claim & Focus</td>
+          <td>Clear, focused, sustained</td>
+          <td>Somewhat clear or drifts</td>
+          <td>Unclear or off-topic</td>
+        </tr>
+        <tr>
+          <td>Evidence & Reasoning</td>
+          <td>Accurate, relevant; reasoning connects</td>
+          <td>Partial, thin, or loosely connected</td>
+          <td>Inaccurate or missing</td>
+        </tr>
+        <tr>
+          <td>Conventions</td>
+          <td>Few/no errors</td>
+          <td>Some errors but readable</td>
+          <td>Frequent errors impede meaning</td>
+        </tr>
+        <tr>
+          <td>Visual Accuracy</td>
+          <td>Correct labels, scale, data, caption</td>
+          <td>Minor issues</td>
+          <td>Misleading or incorrect</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    Teacher tip: Duplicate Part A or Part B for focused practice. © Your Classroom
+  </footer>
+</main>
+</body>
+</html>
+``
